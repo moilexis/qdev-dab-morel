@@ -7,7 +7,7 @@ class DABUnitTests(unittest.TestCase):
     self.assertEqual(checkWithdrawal(350,20), True)
     # cas de test n°2 :
     self.assertEqual(checkWithdrawal(350, 490), False)
-    # cas de test n°2 :
+    # cas de test n°3 :
     self.assertEqual(checkWithdrawal(3050,500 ), False)
 
 
