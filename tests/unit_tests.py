@@ -9,6 +9,8 @@ class DABUnitTests(unittest.TestCase):
     self.assertEqual(checkWithdrawal(350, 490), False)
     # cas de test n°3 :
     self.assertEqual(checkWithdrawal(3050,500 ), False)
+    # cas de test n°3 :
+    self.assertRaises(ValueError, checkWithdrawal, 350, -9)
 
 
 if __name__ == '__main__':
