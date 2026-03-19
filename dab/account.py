@@ -1,7 +1,13 @@
 import sys
 
 def checkWithdrawal(balance, amount):
-  return False
+  if 0 <= amount <= 500:
+      if balance >= amount:
+          return True
+      else:
+          return False
+
+
 
 class Account:
   def __init__(self, number, client="", initial_balance=0.0):
